@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>미디어 쿼리 : 스마트폰에서 스타일 해제</title>
+	<style type="text/css">
+	*{ margin:0; padding:0;}
+	
+	body{
+	width:960px;
+	margin:0 auto;
+	overflow:hidden;
+	}
+	
+	#menu {
+	width:260px;
+	float:left;
+	}
+	#section {
+	width:700px;
+	float:right;	
+	}
+	
+	@media screen and(max-width:767px) {
+	
+	body{width:auto;}
+	#menu{width:auto; float:none;}
+	#section{width:auto; float:none;}
+	}
+	
+	</style>
+</head>
+<body>
+	<div id="menu">
+		<ul>
+			<li>메뉴1</li>
+			<li>메뉴2</li>
+			<li>메뉴3</li>
+		</ul>
+	</div>
+	<div id="section">
+		<h1>반응형 웹</h1>
+		<p> 밥먹자밥먹자밥먹자밥먹자밥먹자밥먹자밥먹자밥먹자
+		</p>
+		<p> 안먹어
+		</p>
+	</div>
+</body>
+</html>

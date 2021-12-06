@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>first-child 선택차</title>
+		<style type="text/css">
+			#content div{
+				width:400px;
+				height:50px;
+				border:solid 1px black;
+			}
+			
+			#content div:first-child{
+				background:yellow;
+			}
+			
+			#content div:first-child+div {
+				background:green;
+			}
+			
+			#content div:nth-child(3) {
+				background:gold;
+			}
+			
+			#content div:nth-child(4) {
+				background:pink;
+			}
+			
+			/* 띄어 쓰기 주의! div:first-child, div:nth-child 에서 콜론(;) 앞 뒤로 띄어 쓰기 하면 안 됨*/
+			
+		</style>
+	</head>
+	<body>
+		<div id="content"">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</body>
+</html>
